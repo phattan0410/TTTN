@@ -129,7 +129,7 @@ use Illuminate\Support\Facades\Session;
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link">
-     
+
                 <i class="nav-icon fa-solid fa-clipboard"></i>
                 <p>
                     Quản Lý Danh Mục
@@ -137,7 +137,7 @@ use Illuminate\Support\Facades\Session;
                 </p>
                 </a>
                 <ul class="nav nav-treeview">
-               
+
                 <li class="nav-item">
                     <a href="/admin/class/list" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
@@ -165,13 +165,38 @@ use Illuminate\Support\Facades\Session;
                 </ul>
             </li>
             <li class="nav-item">
+                <a href="#" class="nav-link">
+
+                <i class="nav-icon fa-thin fas fa-money-check-alt "></i>
+                <p>
+                    Quản Lý Thu
+                    <i class="right fas fa-angle-left"></i>
+                </p>
+                </a>
+                <ul class="nav nav-treeview">
+
+                <li class="nav-item">
+                    <a href="/admin/fees/list" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Biên lai lệ phí</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/admin/tution/list" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Biên lai học phí</p>
+                    </a>
+                </li>
+                </ul>
+            </li>
+            <li class="nav-item">
                 <a href="/admin/users/logout" class="nav-link">
                 <p>
                     Đăng xuất
-                    
+
                 </p>
                 </a>
-                
+
             </li>
             </ul>
         </nav>
