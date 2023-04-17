@@ -44,7 +44,7 @@ class ClassController extends Controller
             'hp.required'=>'Chưa nhập học phí',
             'hp.numeric'=>'Học phí phải là số',
             'tgh.required'=>'Chưa chọn thời gian học',
-        ]); 
+        ]);
         $nv = new LopNangKhieu();
         $nv->MaLop=$request->ma;
         $nv->TenLop=$request->ten;
@@ -79,7 +79,7 @@ class ClassController extends Controller
             'hp.required'=>'Chưa nhập học phí',
             'hp.numeric'=>'Học phí phải là số',
             'tgh.required'=>'Chưa chọn thời gian học',
-        ]); 
+        ]);
         $data = array();
         $data['TenLop']=$request->ten;
         $data['SoBuoiHoc']=$request->sbh;
