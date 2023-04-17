@@ -14,19 +14,17 @@ class CreateBienlailephiTable extends Migration
     public function up()
     {
         Schema::create('bienlailephi', function (Blueprint $table) {
-            Schema::create('bienlailephi', function (Blueprint $table) {
-                $table->string('MaBL', 10);
-                $table->dateTime('NgayDong');
-                $table->string('SoTien', 11);
-                $table->string('GhiChu', 100);
-                $table->string('MaNV', 10);
-                $table->string('MaHS', 10);
-                $table->primary('MaBL');
-                $table->foreign('MaNV')->references('MaNV')->on('nhanvien');
-                $table->foreign('MaHS')->references('MaHS')->on('phuhuynh');
-                $table->engine = 'InnoDB';
-                $table->timestamps();
-            });
+            $table->string('MaBL', 10);
+            $table->dateTime('NgayDong');
+            $table->string('SoTien', 11);
+            $table->string('GhiChu', 100);
+            $table->string('MaNV', 10);
+            $table->string('MaHS', 10);
+            $table->primary('MaBL');
+            $table->foreign('MaNV')->references('MaNV')->on('nhanvien');
+            $table->foreign('MaHS')->references('MaHS')->on('phuhuynh');
+            $table->engine = 'InnoDB';
+            $table->timestamps();
         });
     }
 
