@@ -7,7 +7,7 @@ use App\Models\BienLaiHocPhi;
 use Illuminate\Http\Request;
 use DB;
 
-class FeeController extends Controller
+class TutionController extends Controller
 {
     public function show(){
         // $this->AuthLogin();

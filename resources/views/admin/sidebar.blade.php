@@ -190,6 +190,13 @@ use Illuminate\Support\Facades\Session;
                 </ul>
             </li>
             <li class="nav-item">
+                <a href="/admin/student/list" class="nav-link">
+
+                <i class="nav-icon fa-thin fas fas fa-user-graduate"></i>Quản Lý Học Sinh
+
+                </a>
+            </li>
+            <li class="nav-item">
                 <a href="/admin/users/logout" class="nav-link">
                 <p>
                     Đăng xuất
