@@ -32,31 +32,33 @@ class StudentController extends Controller
             'gt' => 'required',
             'dt' => 'required',
             'dc' => 'required',
-            'tdn' => 'required',
-            'mk' => 'required',
+            'tdn'=> 'required',
+            'mk' => 'required'
         ],[
             'ma.required'=>'Chưa nhập mã',
             'ten.required'=>'Chưa nhập tên',
             'gt.required'=>'Chưa nhập giới tính',
             'dt.required'=>'Chưa nhập số điện thoại',
             'dc.required'=>'Chưa nhập địa chỉ',
+            'tdn.required'=> 'Chưa nhập tên đăng nhập',
+            'mk.requrired' => 'Chưa nhập mật khẩu'
         ]);
         $nv = new HocSinh();
-        $nv->MaLop=$request->ma;
-        $nv->TenLop=$request->ten;
-        $nv->SoBuoiHoc=$request->sbh;
-        $nv->SoLuongHS=$request->slhs;
-        $nv->HocPhi=$request->hp;
-        $nv->ThoiGianHoc=$request->tgh;
-        $nv->MaNV=$request->gvpt;
+        $nv->MaHS=$request->ma;
+        $nv->TenHS=$request->ten;
+        $nv->GioiTinh=$request->gt;
+        $nv->DienThoai=$request->dt;
+        $nv->DiaChi=$request->dc;
+        $nv->TenDangNhap=$request->tdn;
+        $nv->MatKhau=$request->mk;
         $nv->save();
-        return Redirect('/admin/class/list')->with('success','Thêm thành công');
+        return Redirect('/admin/student/list')->with('success','Thêm thành công');
     }
     public function edit($id){
-        $nv = HocSinh::where('MaLop',$id)->first();
+        $nv = HocSinh::where('MaHS',$id)->first();
         $nv1 = NhanVien::where('MaLoaiNV','GV')->get();
-        return view('admin.class.edit',[
-            'title'=>'Sửa Lớp Năng Khiếu'
+        return view('admin.student.edit',[
+            'title'=>'Sửa Học Sinh'
         ])->with('data',$nv)->with('data1',$nv1);
     }
     public function update(Request $request,$id){
@@ -66,7 +68,6 @@ class StudentController extends Controller
             'dt' => 'required',
             'dc' => 'required',
         ],[
-            'ma.required'=>'Chưa nhập mã',
             'ten.required'=>'Chưa nhập tên',
             'gt.required'=>'Chưa nhập giới tính',
             'dt.required'=>'Chưa nhập số điện thoại',
@@ -74,9 +75,9 @@ class StudentController extends Controller
         ]);
         $data = array();
         $data['TenHS']=$request->ten;
-        $data['GioiTinh']=$request->sbh;
-        $data['SoDienThoai']=$request->slhs;
-        $data['DiaChi']=$request->hp;
+        $data['GioiTinh']=$request->gt;
+        $data['DienThoai']=$request->dt;
+        $data['DiaChi']=$request->dc;
         DB::table('hocsinh')->where('MaHS',$id)->update($data);
         return Redirect('/admin/student/list')->with('success','Sửa thành công');
     }

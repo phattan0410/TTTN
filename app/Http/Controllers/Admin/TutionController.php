@@ -39,6 +39,8 @@ class TutionController extends Controller
             'ngay.required'=>'Chưa nhập ngày đóng',
             'tien.required'=>'Chưa nhập số tiền',
             'tien.numeric'=>'Số tiền bữa ăn phải là số',
+            'malop.required' => 'Chưa nhập mã lớp',
+            'mahs.required' => 'Chưa nhập mã học sinh'
         ]);
         $nv = new BienLaiHocPhi();
         $nv->MaBL=$request->ma;
@@ -65,6 +67,7 @@ class TutionController extends Controller
             'ngay.required'=>'Chưa nhập ngày',
             'tien.required'=>'Chưa nhập số tiền',
             'tien.numeric'=>'Số tiền đóng phải là số',
+            'ghichu.required'=>'Chưa nhập ghi chú'
         ]);
         $data = array();
         $data['NgayDong']=$request->ngay;

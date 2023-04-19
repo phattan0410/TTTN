@@ -39,14 +39,14 @@
         </div>
         <div class="form-group">
             <label >Tên Đăng Nhập</label>
-            <input value="{{$data->TenDangNhap}}" type="text" name="tgh" class="form-control">
-            @error('tgh')
+            <input value="{{$data->TenDangNhap}}" type="text" name="tdn" class="form-control" disabled>
+            @error('tdn')
             <span class="text-danger input-group mb-3">{{$message}}</span>
             @enderror
         </div>
         <div class="form-group">
             <label >Mật Khẩu</label>
-            <input value="{{$data->MatKhau}}" type="text" name="mk" class="form-control">
+            <input value="{{$data->MatKhau}}" type="text" name="mk" class="form-control" disabled>
             @error('mk')
             <span class="text-danger input-group mb-3">{{$message}}</span>
             @enderror

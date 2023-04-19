@@ -39,7 +39,7 @@
         </div>
         <div class="form-group">
             <label >Tên Đăng Nhập</label>
-            <input value="{{old('tdn')}}" type="date" name="tdn" class="form-control">
+            <input value="{{old('tdn')}}" type="text" name="tdn" class="form-control">
             @error('tdn')
             <span class="text-danger input-group mb-3">{{$message}}</span>
             @enderror

@@ -33,14 +33,14 @@
           </div>
           <div class="form-group">
             <label >Mã Lớp</label>
-            <input value="{{$data->MaLop}}" type="text" name="malop" class="form-control">
+            <input value="{{$data->MaLop}}" type="text" name="malop" class="form-control" disabled>
             @error('malop')
             <span class="text-danger input-group mb-3">{{$message}}</span>
             @enderror
           </div>
           <div class="form-group">
             <label >Mã Học Sinh</label>
-            <input value="{{$data->MaHS}}" type="text" name="mahs" class="form-control">
+            <input value="{{$data->MaHS}}" type="text" name="mahs" class="form-control" disabled>
             @error('mahs')
             <span class="text-danger input-group mb-3">{{$message}}</span>
             @enderror

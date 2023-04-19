@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateBienlaihocphiTable extends Migration
+class CreateBienlailephiTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,16 +13,15 @@ class CreateBienlaihocphiTable extends Migration
      */
     public function up()
     {
-        Schema::table('bienlaihocphi', function (Blueprint $table) {
+        Schema::create('bienlailephi', function (Blueprint $table) {
             $table->string('MaBL', 10);
             $table->dateTime('NgayDong');
             $table->string('SoTien', 11);
             $table->string('GhiChu', 100);
-            $table->string('MaLop', 10);
+            $table->string('MaNV', 10);
             $table->string('MaHS', 10);
             $table->primary('MaBL');
-            $table->foreign('MaHS')->references('MaHS')->on('hocsinh');
-            $table->foreign('MaLop')->references('MaLop')->on('lopnangkhieu');
+            $table->foreign('MaNV')->references('MaNV')->on('nhanvien');
             $table->engine = 'InnoDB';
             $table->timestamps();
         });
@@ -35,6 +34,6 @@ class CreateBienlaihocphiTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('bienlaihocphi');
+        Schema::dropIfExists('bienlailephi');
     }
 }

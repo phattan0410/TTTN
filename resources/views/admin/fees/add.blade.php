@@ -18,15 +18,15 @@
           </div>
           <div class="form-group">
             <label >Số Tiền Đóng</label>
-            <input value="{{old('sotien')}}" type="text" name="std" class="form-control">
-            @error('std')
+            <input value="{{old('tien')}}" type="text" name="tien" class="form-control">
+            @error('tien')
             <span class="text-danger input-group mb-3">{{$message}}</span>
             @enderror
           </div>
           <div class="form-group">
             <label >Ghi Chú</label>
-            <input value="{{old('ghichu')}}" type="text" name="gc" class="form-control">
-            @error('gc')
+            <input value="{{old('ghichu')}}" type="text" name="ghichu" class="form-control">
+            @error('ghichu')
             <span class="text-danger input-group mb-3">{{$message}}</span>
             @enderror
           </div>

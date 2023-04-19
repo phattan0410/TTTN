@@ -31,7 +31,7 @@ class FeeController extends Controller
             'ma' => 'required',
             'ngay' => 'required',
             'tien' => 'required|numeric',
-            'ghichu' => 'require',
+            'ghichu' => 'required',
             'manv' => 'required',
             'mahs' => 'required'
         ],[
@@ -39,6 +39,9 @@ class FeeController extends Controller
             'ngay.required'=>'Chưa nhập ngày đóng',
             'tien.required'=>'Chưa nhập số tiền',
             'tien.numeric'=>'Số tiền đóng phải là số',
+            'ghichu.required'=>'Chưa nhập ghi chú',
+            'manv.required' => 'Chưa nhập mã nhân viên',
+            'mahs.required' => 'Chưa nhập mã học sinh'
         ]);
         $nv = new BienLaiLePhi();
         $nv->MaBL=$request->ma;
@@ -60,11 +63,12 @@ class FeeController extends Controller
         $this->validate($request,[
             'ngay' => 'required',
             'tien' => 'required|numeric',
-            'ghichu' => 'require',
+            'ghichu' => 'required',
         ],[
             'ngay.required'=>'Chưa nhập ngày',
             'tien.required'=>'Chưa nhập số tiền',
             'tien.numeric'=>'Số tiền đóng phải là số',
+            'ghichu.required'=>'Chưa nhập ghi chú'
         ]);
         $data = array();
         $data['NgayDong']=$request->ngay;
