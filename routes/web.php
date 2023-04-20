@@ -17,7 +17,7 @@ use App\Http\Controllers\Admin\ParentController;
 use App\Http\Controllers\Admin\StudentController;
 use App\Http\Controllers\Page\CourseController;
 use App\Http\Controllers\Page\LoginController as PageLoginController;
-use App\Http\Controllers\Page\SearchController;
+use App\Http\Controllers\Admin\SearchController;
 
 /*
 |--------------------------------------------------------------------------
@@ -153,6 +153,11 @@ Route::prefix('admin')->group(function () {
         Route::get('edit/{id}', [FoodController::class, 'edit']);
         Route::post('edit/{id}', [FoodController::class, 'update']);
         Route::get('delete/{id}', [FoodController::class, 'delete']);
+    });
+    //Search
+    Route::middleware('adminLogin')->prefix('search')->group(function () {
+        Route::get('/', [SearchController::class, 'index']);
+        Route::post('/', [SearchController::class, 'search']);
     });
 });
 

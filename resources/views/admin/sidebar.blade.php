@@ -239,6 +239,15 @@
                      </ul>
                  </li>
                  <li class="nav-item">
+                     <a href="/admin/search" class="nav-link">
+                         <i class="nav-icon fa-solid fa-magnifying-glass"></i>
+                         <p>
+                             Tìm Kiếm
+                             <!-- <i class="right fas fa-angle-left"></i>    -->
+                         </p>
+                     </a>
+                 </li>
+                 <li class="nav-item">
                      <a href="/admin/users/logout" class="nav-link">
                          <p>
                              Đăng xuất
