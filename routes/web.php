@@ -18,10 +18,9 @@ use App\Http\Controllers\Admin\StudentController;
 use App\Http\Controllers\Page\CourseController;
 use App\Http\Controllers\Page\LoginController as PageLoginController;
 use App\Http\Controllers\Admin\SearchController;
-use App\Http\Controllers\Page\SearchController;
 use App\Http\Controllers\Admin\FeeController;
 use App\Http\Controllers\Admin\TutionController;
-use App\Http\Controllers\Admin\StudentController;
+
 
 
 /*
