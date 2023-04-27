@@ -18,6 +18,11 @@ use App\Http\Controllers\Admin\StudentController;
 use App\Http\Controllers\Page\CourseController;
 use App\Http\Controllers\Page\LoginController as PageLoginController;
 use App\Http\Controllers\Admin\SearchController;
+use App\Http\Controllers\Page\SearchController;
+use App\Http\Controllers\Admin\FeeController;
+use App\Http\Controllers\Admin\TutionController;
+use App\Http\Controllers\Admin\StudentController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -60,10 +65,12 @@ Route::get('/checkout/show', [CheckoutController::class, 'show']);
 Route::get('/checkout/detail/{id_dh}', [CheckoutController::class, 'detail']);
 //Search
 Route::post('/search', [SearchController::class, 'search']);
+
 //Course
 Route::get('/course', [CourseController::class, 'index']);
 Route::get('/checkout/show', [CheckoutController::class, 'show']);
 Route::get('/checkout/detail/{id_dh}', [CheckoutController::class, 'detail']);
+
 
 
 
@@ -106,8 +113,10 @@ Route::prefix('admin')->group(function () {
     Route::middleware('adminLogin')->prefix('customer')->group(function () {
         Route::get('list', [MemberController::class, 'show']);
         Route::get('list2', [MemberController::class, 'show2']);
+
         Route::get('listGV', [MemberController::class, 'showGV']);
         Route::get('listNV', [MemberController::class, 'showNV']);
+
         Route::get('edit/{id}', [MemberController::class, 'edit']);
         Route::post('edit/{id}', [MemberController::class, 'update']);
         Route::post('update/{id}', [MemberController::class, 'update2']);
@@ -116,7 +125,9 @@ Route::prefix('admin')->group(function () {
     //Class
     Route::middleware('adminLogin')->prefix('class')->group(function () {
         Route::get('list', [ClassController::class, 'show']);
+
         Route::get('show', [ClassController::class, 'show1']);
+
         Route::get('add', [ClassController::class, 'show2']);
         Route::post('add', [ClassController::class, 'add']);
         Route::get('edit/{id}', [ClassController::class, 'edit']);
@@ -124,10 +135,12 @@ Route::prefix('admin')->group(function () {
         Route::get('delete/{id}', [ClassController::class, 'delete']);
     });
     //Parent
+
     Route::middleware('adminLogin')->prefix('student')->group(function () {
         Route::get('list', [StudentController::class, 'index']);
     });
     //Parent
+
     Route::middleware('adminLogin')->prefix('parent')->group(function () {
         Route::get('list', [ParentController::class, 'show']);
         Route::get('add', [ParentController::class, 'show2']);
@@ -154,10 +167,39 @@ Route::prefix('admin')->group(function () {
         Route::post('edit/{id}', [FoodController::class, 'update']);
         Route::get('delete/{id}', [FoodController::class, 'delete']);
     });
+
     //Search
     Route::middleware('adminLogin')->prefix('search')->group(function () {
         Route::get('/', [SearchController::class, 'index']);
         Route::post('/', [SearchController::class, 'search']);
+    });
+
+    //Fee
+    Route::middleware('adminLogin')->prefix('fees')->group(function () {
+        Route::get('list', [FeeController::class, 'show']);
+        Route::get('add', [FeeController::class, 'show2']);
+        Route::post('add', [FeeController::class, 'add']);
+        Route::get('edit/{id}', [FeeController::class, 'edit']);
+        Route::post('edit/{id}', [FeeController::class, 'update']);
+        Route::get('delete/{id}', [FeeController::class, 'delete']);
+    });
+    //Tution
+    Route::middleware('adminLogin')->prefix('tution')->group(function () {
+        Route::get('list', [TutionController::class, 'show']);
+        Route::get('add', [TutionController::class, 'show2']);
+        Route::post('add', [TutionController::class, 'add']);
+        Route::get('edit/{id}', [TutionController::class, 'edit']);
+        Route::post('edit/{id}', [TutionController::class, 'update']);
+        Route::get('delete/{id}', [TutionController::class, 'delete']);
+    });
+    //student
+    Route::middleware('adminLogin')->prefix('student')->group(function () {
+        Route::get('list', [StudentController::class, 'show']);
+        Route::get('add', [StudentController::class, 'show2']);
+        Route::post('add', [StudentController::class, 'add']);
+        Route::get('edit/{id}', [StudentController::class, 'edit']);
+        Route::post('edit/{id}', [StudentController::class, 'update']);
+        Route::get('delete/{id}', [StudentController::class, 'delete']);
     });
 });
 

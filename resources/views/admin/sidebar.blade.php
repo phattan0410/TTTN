@@ -108,153 +108,185 @@
                     <p>Thêm Hãng Sản Xuất</p>
                     </a>
                 </li> -->
-                         <li class="nav-item">
+                         <<<<<<< HEAD <li class="nav-item">
                              <a href="/admin/users/add" class="nav-link">
                                  <i class="far fa-circle nav-icon"></i>
                                  <p>Thêm Nhân Viên</p>
                              </a>
-                         </li>
-                         <li class="nav-item">
-                             <a href="/admin/customer/list" class="nav-link">
-                                 <i class="far fa-circle nav-icon"></i>
-                                 <p>Danh Sách Nhân Viên</p>
-                             </a>
-                         </li>
-                         <li class="nav-item">
-                             <a href="/admin/customer/list2" class="nav-link">
-                                 <i class="far fa-circle nav-icon"></i>
-                                 <p>Phân Quyền Nhân Viên</p>
-                             </a>
-                         </li>
-                     </ul>
                  </li>
                  <li class="nav-item">
-                     <a href="#" class="nav-link">
-
-                         <i class="nav-icon fa-solid fa-clipboard"></i>
-                         <p>
-                             Quản Lý Danh Mục
-                             <i class="right fas fa-angle-left"></i>
-                         </p>
-                     </a>
-                     <ul class="nav nav-treeview">
-
-                         <li class="nav-item">
-                             <a href="/admin/class/list" class="nav-link">
-                                 <i class="far fa-circle nav-icon"></i>
-                                 <p>Quản Lý Lớp Năng Khiếu</p>
-                             </a>
-                         </li>
-                         <li class="nav-item">
-                             <a href="/admin/parent/list" class="nav-link">
-                                 <i class="far fa-circle nav-icon"></i>
-                                 <p>Quản Lý Phụ Huynh</p>
-                             </a>
-                         </li>
-                         <li class="nav-item">
-                             <a href="/admin/brunch/list" class="nav-link">
-                                 <i class="far fa-circle nav-icon"></i>
-                                 <p>Quản Lý Bữa Ăn</p>
-                             </a>
-                         </li>
-                         <li class="nav-item">
-                             <a href="/admin/food/list" class="nav-link">
-                                 <i class="far fa-circle nav-icon"></i>
-                                 <p>Quản Lý Món Ăn</p>
-                             </a>
-                         </li>
-                     </ul>
-                 </li>
-                 <li class="nav-item">
-                     <a href="#" class="nav-link">
-                         <i class="nav-icon  fa-solid fa-utensils"></i>
-
-                         <p>
-                             Quản Lý Khẩu Phần Ăn
-                             <i class="right fas fa-angle-left"></i>
-                         </p>
-                     </a>
-                     <ul class="nav nav-treeview">
-                         <li class="nav-item">
-                             <a href="/admin/class/list" class="nav-link">
-                                 <i class="far fa-circle nav-icon"></i>
-                                 <p>Bữa Ăn Học Sinh</p>
-                             </a>
-                         </li>
-                         <li class="nav-item">
-                             <a href="/admin/parent/list" class="nav-link">
-                                 <i class="far fa-circle nav-icon"></i>
-                                 <p>Thành Phần Món Ăn</p>
-                             </a>
-                         </li>
-                     </ul>
-                 </li>
-                 <li class="nav-item">
-                     <a href="#" class="nav-link">
-                         <!-- <i class="nav-icon fa-solid fa-clipboard"></i> -->
-                         <i class="nav-icon fa-solid fa-list"></i>
-
-                         <p>
-                             Thống kê
-                             <i class="right fas fa-angle-left"></i>
-                         </p>
-                     </a>
-                     <ul class="nav nav-treeview">
-                         <li class="nav-item">
-                             <a href="/admin/customer/listGV" class="nav-link">
-                                 <i class="far fa-circle nav-icon"></i>
-                                 <p>Danh Sách Giáo Viên</p>
-                             </a>
-                         </li>
-                         <li class="nav-item">
-                             <a href="/admin/customer/listNV" class="nav-link">
-                                 <i class="far fa-circle nav-icon"></i>
-                                 <p>Danh Sách Nhân Viên</p>
-                             </a>
-                         </li>
-                         <li class="nav-item">
-                             <a href="/admin/class/show" class="nav-link">
-                                 <i class="far fa-circle nav-icon"></i>
-                                 <p>Danh Sách Lớp Học</p>
-                             </a>
-                         </li>
-                         <li class="nav-item">
-                             <a href="/admin/student/list" class="nav-link">
-                                 <i class="far fa-circle nav-icon"></i>
-                                 <p>Danh Sách Học Sinh</p>
-                             </a>
-                         </li>
-                         <li class="nav-item">
-                             <a href="/admin/parent/list" class="nav-link">
-                                 <i class="far fa-circle nav-icon"></i>
-                                 <p>Danh Sach Nợ Lệ Phí Đưa Rước</p>
-                             </a>
-                         </li>
-                         <li class="nav-item">
-                             <a href="/admin/parent/list" class="nav-link">
-                                 <i class="far fa-circle nav-icon"></i>
-                                 <p>Danh Sách Nợ Lệ Phí Khóa Học</p>
-                             </a>
-                         </li>
-                     </ul>
-                 </li>
-                 <li class="nav-item">
-                     <a href="/admin/search" class="nav-link">
-                         <i class="nav-icon fa-solid fa-magnifying-glass"></i>
-                         <p>
-                             Tìm Kiếm
-                             <!-- <i class="right fas fa-angle-left"></i>    -->
-                         </p>
+                     <a href="/admin/customer/list" class="nav-link">
+                         <i class="far fa-circle nav-icon"></i>
+                         <p>Danh Sách Nhân Viên</p>
                      </a>
                  </li>
                  <li class="nav-item">
-                     <a href="/admin/users/logout" class="nav-link">
-                         <p>
-                             Đăng xuất
-                         </p>
+                     <a href="/admin/customer/list2" class="nav-link">
+                         <i class="far fa-circle nav-icon"></i>
+                         <p>Phân Quyền Nhân Viên</p>
                      </a>
-
                  </li>
+             </ul>
+             </li>
+             <li class="nav-item">
+                 <a href="#" class="nav-link">
+
+                     <i class="nav-icon fa-solid fa-clipboard"></i>
+                     <p>
+                         Quản Lý Danh Mục
+                         <i class="right fas fa-angle-left"></i>
+                     </p>
+                 </a>
+                 <ul class="nav nav-treeview">
+
+                     <li class="nav-item">
+                         <a href="/admin/class/list" class="nav-link">
+                             <i class="far fa-circle nav-icon"></i>
+                             <p>Quản Lý Lớp Năng Khiếu</p>
+                         </a>
+                     </li>
+                     <li class="nav-item">
+                         <a href="/admin/parent/list" class="nav-link">
+                             <i class="far fa-circle nav-icon"></i>
+                             <p>Quản Lý Phụ Huynh</p>
+                         </a>
+                     </li>
+                     <li class="nav-item">
+                         <a href="/admin/brunch/list" class="nav-link">
+                             <i class="far fa-circle nav-icon"></i>
+                             <p>Quản Lý Bữa Ăn</p>
+                         </a>
+                     </li>
+                     <li class="nav-item">
+                         <a href="/admin/food/list" class="nav-link">
+                             <i class="far fa-circle nav-icon"></i>
+                             <p>Quản Lý Món Ăn</p>
+                         </a>
+                     </li>
+                 </ul>
+             </li>
+             <li class="nav-item">
+                 <a href="#" class="nav-link">
+
+                     <i class="nav-icon fa-thin fas fa-money-check-alt "></i>
+                     <p>
+                         Quản Lý Thu
+                         <i class="right fas fa-angle-left"></i>
+                     </p>
+                 </a>
+                 <ul class="nav nav-treeview">
+
+                     <li class="nav-item">
+                         <a href="/admin/fees/list" class="nav-link">
+                             <i class="far fa-circle nav-icon"></i>
+                             <p>Biên lai lệ phí</p>
+                         </a>
+                     </li>
+                     <li class="nav-item">
+                         <a href="/admin/tution/list" class="nav-link">
+                             <i class="far fa-circle nav-icon"></i>
+                             <p>Biên lai học phí</p>
+                         </a>
+                     </li>
+                 </ul>
+             </li>
+             <li class="nav-item">
+                 <a href="/admin/student/list" class="nav-link">
+
+                     <i class="nav-icon fa-thin fas fas fa-user-graduate"></i>Quản Lý Học Sinh
+
+                 </a>
+             </li>
+             <li class="nav-item">
+                 <a href="#" class="nav-link">
+                     <i class="nav-icon  fa-solid fa-utensils"></i>
+
+                     <p>
+                         Quản Lý Khẩu Phần Ăn
+                         <i class="right fas fa-angle-left"></i>
+                     </p>
+                 </a>
+                 <ul class="nav nav-treeview">
+                     <li class="nav-item">
+                         <a href="/admin/class/list" class="nav-link">
+                             <i class="far fa-circle nav-icon"></i>
+                             <p>Bữa Ăn Học Sinh</p>
+                         </a>
+                     </li>
+                     <li class="nav-item">
+                         <a href="/admin/parent/list" class="nav-link">
+                             <i class="far fa-circle nav-icon"></i>
+                             <p>Thành Phần Món Ăn</p>
+                         </a>
+                     </li>
+                 </ul>
+             </li>
+             <li class="nav-item">
+                 <a href="#" class="nav-link">
+                     <!-- <i class="nav-icon fa-solid fa-clipboard"></i> -->
+                     <i class="nav-icon fa-solid fa-list"></i>
+
+                     <p>
+                         Thống kê
+                         <i class="right fas fa-angle-left"></i>
+                     </p>
+                 </a>
+                 <ul class="nav nav-treeview">
+                     <li class="nav-item">
+                         <a href="/admin/customer/listGV" class="nav-link">
+                             <i class="far fa-circle nav-icon"></i>
+                             <p>Danh Sách Giáo Viên</p>
+                         </a>
+                     </li>
+                     <li class="nav-item">
+                         <a href="/admin/customer/listNV" class="nav-link">
+                             <i class="far fa-circle nav-icon"></i>
+                             <p>Danh Sách Nhân Viên</p>
+                         </a>
+                     </li>
+                     <li class="nav-item">
+                         <a href="/admin/class/show" class="nav-link">
+                             <i class="far fa-circle nav-icon"></i>
+                             <p>Danh Sách Lớp Học</p>
+                         </a>
+                     </li>
+                     <li class="nav-item">
+                         <a href="/admin/student/list" class="nav-link">
+                             <i class="far fa-circle nav-icon"></i>
+                             <p>Danh Sách Học Sinh</p>
+                         </a>
+                     </li>
+                     <li class="nav-item">
+                         <a href="/admin/parent/list" class="nav-link">
+                             <i class="far fa-circle nav-icon"></i>
+                             <p>Danh Sach Nợ Lệ Phí Đưa Rước</p>
+                         </a>
+                     </li>
+                     <li class="nav-item">
+                         <a href="/admin/parent/list" class="nav-link">
+                             <i class="far fa-circle nav-icon"></i>
+                             <p>Danh Sách Nợ Lệ Phí Khóa Học</p>
+                         </a>
+                     </li>
+                 </ul>
+             </li>
+             <li class="nav-item">
+                 <a href="/admin/search" class="nav-link">
+                     <i class="nav-icon fa-solid fa-magnifying-glass"></i>
+                     <p>
+                         Tìm Kiếm
+                         <!-- <i class="right fas fa-angle-left"></i>    -->
+                     </p>
+                 </a>
+             </li>
+             <li class="nav-item">
+                 <a href="/admin/users/logout" class="nav-link">
+                     <p>
+                         Đăng xuất
+                     </p>
+                 </a>
+
+             </li>
              </ul>
          </nav>
          <!-- /.sidebar-menu -->

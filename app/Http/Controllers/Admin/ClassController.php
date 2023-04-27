@@ -46,6 +46,7 @@ class ClassController extends Controller
             'slhs' => 'required|numeric',
             'hp' => 'required|numeric',
             'tgh' => 'required',
+
         ], [
             'ma.required' => 'Chưa nhập mã',
             'ten.required' => 'Chưa nhập tên',
@@ -56,6 +57,7 @@ class ClassController extends Controller
             'hp.required' => 'Chưa nhập học phí',
             'hp.numeric' => 'Học phí phải là số',
             'tgh.required' => 'Chưa chọn thời gian học',
+
         ]);
         $nv = new LopNangKhieu();
         $nv->MaLop = $request->ma;
@@ -84,6 +86,7 @@ class ClassController extends Controller
             'slhs' => 'required|numeric',
             'hp' => 'required|numeric',
             'tgh' => 'required',
+
         ], [
             'ten.required' => 'Chưa nhập tên',
             'sbh.required' => 'Chưa nhập số buổi học',
@@ -93,6 +96,7 @@ class ClassController extends Controller
             'hp.required' => 'Chưa nhập học phí',
             'hp.numeric' => 'Học phí phải là số',
             'tgh.required' => 'Chưa chọn thời gian học',
+
         ]);
         $data = array();
         $data['TenLop'] = $request->ten;

@@ -1,7 +1,7 @@
 @extends('admin.main')
 @section('content')
     <form method="POST">
-      <div class="card-body"> 
+      <div class="card-body">
         <div class="form-group">
             <label >Mã Món Ăn</label>
             <input value="{{old('ma')}}" type="text" name="ma" class="form-control">
