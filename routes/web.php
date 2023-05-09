@@ -36,6 +36,10 @@ use App\Http\Controllers\Admin\TutionController;
 //=====================================Page============================================
 //Main
 Route::get('/', [MainController::class, 'index']);
+Route::get('/payments', [TutionController::class, 'payments']);
+Route::post('/payments', [TutionController::class, 'momo_payments']);
+
+
 //NSX
 Route::get('/nsx/{nsx}', [MainController::class, 'show']);
 //Product_detail
@@ -187,9 +191,11 @@ Route::prefix('admin')->group(function () {
         Route::get('list', [TutionController::class, 'show']);
         Route::get('add', [TutionController::class, 'show2']);
         Route::post('add', [TutionController::class, 'add']);
+        Route::post('add2', [TutionController::class, 'add2']);
         Route::get('edit/{id}', [TutionController::class, 'edit']);
         Route::post('edit/{id}', [TutionController::class, 'update']);
         Route::get('delete/{id}', [TutionController::class, 'delete']);
+        Route::get('send/{id}', [TutionController::class, 'send_mail']);
     });
     //student
     Route::middleware('adminLogin')->prefix('student')->group(function () {

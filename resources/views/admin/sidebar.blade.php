@@ -256,7 +256,7 @@
                                  <p>Danh Sách Học Sinh</p>
                              </a>
                          </li>
-                         <li class="nav-item">
+                         <!-- <li class="nav-item">
                              <a href="/admin/parent/list" class="nav-link">
                                  <i class="far fa-circle nav-icon"></i>
                                  <p>Danh Sach Nợ Lệ Phí Đưa Rước</p>
@@ -267,7 +267,7 @@
                                  <i class="far fa-circle nav-icon"></i>
                                  <p>Danh Sách Nợ Lệ Phí Khóa Học</p>
                              </a>
-                         </li>
+                         </li> -->
                      </ul>
                  </li>
                  <li class="nav-item">

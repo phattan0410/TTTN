@@ -10,6 +10,28 @@
       @enderror
     </div>
     <div class="form-group">
+      <label>Lớp</label>
+      <select name="malop" id="lop" class="form-control choose">
+        <option value="0">...</option>
+
+        @foreach($lh as $v)
+        <option value="{{$v->MaLop}}">{{$v->TenLop}}</option>
+        @endforeach
+      </select>
+      @error('malop')
+      <span class="text-danger input-group mb-3">{{$message}}</span>
+      @enderror
+    </div>
+    <div class="form-group">
+      <label>Học Sinh</label>
+      <select name="mahs" id="hs" class="form-control ">
+        <option value="0">...</option>
+      </select>
+      @error('mahs')
+      <span class="text-danger input-group mb-3">{{$message}}</span>
+      @enderror
+    </div>
+    <div class="form-group">
       <label>Ngày Đóng Tiền</label>
       <input value="{{old('ngay')}}" type="date" name="ngay" class="form-control">
       @error('ngay')
@@ -18,7 +40,7 @@
     </div>
     <div class="form-group">
       <label>Số Tiền Đóng</label>
-      <input value="{{old('tien')}}" type="text" name="tien" class="form-control">
+      <input id="hp" value="{{old('tien')}}" type="text" name="tien" class="form-control">
       @error('tien')
       <span class="text-danger input-group mb-3">{{$message}}</span>
       @enderror
@@ -30,23 +52,13 @@
       <span class="text-danger input-group mb-3">{{$message}}</span>
       @enderror
     </div>
-    <div class="form-group">
-      <label>Mã Lớp</label>
-      <input value="{{old('malop')}}" type="text" name="malop" class="form-control">
-      @error('malop')
-      <span class="text-danger input-group mb-3">{{$message}}</span>
-      @enderror
-    </div>
-    <div class="form-group">
-      <label>Mã Học Sinh</label>
-      <input value="{{old('mahs')}}" type="text" name="mahs" class="form-control">
-      @error('mahs')
-      <span class="text-danger input-group mb-3">{{$message}}</span>
-      @enderror
-    </div>
+
     <div class="card-footer">
       <button type="submit" class="btn btn-primary">Thêm</button>
     </div>
     @csrf
 </form>
 @endsection
+@section('js')
+
+@stop

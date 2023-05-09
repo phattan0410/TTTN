@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    @include('page.head')
+	@include('page.head')
 </head>
+
 <body class="animsition">
-	
+
 	<!-- Header -->
 	@include('page.header')
 
@@ -13,19 +15,19 @@
 	<section class="section-slide">
 		<div class="wrap-slick1">
 			<div class="slick1">
-				<div class="item-slick1" style="background-image: url(/template/page/images/slider-01.jpg);">
+				<div class="item-slick1" style="background-image: url(/template/page/images/icons/giaovien.png);">
 				</div>
 
-				<div class="item-slick1" style="background-image: url(/template/page/images/slider-02.jpg);">
+				<!-- <div class="item-slick1" style="background-image: url(/template/page/images/slider-02.jpg);">
 					<div class="container h-full">
 						<div class="flex-col-l-m h-full p-t-100 p-b-30 respon5">
 						</div>
 					</div>
-				</div>
+				</div> -->
 
-				<div class="item-slick1" style="background-image: url(/template/page/images/slider-03.jpg);">
+				<!-- <div class="item-slick1" style="background-image: url(/template/page/images/slider-03.jpg);">
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</section>
@@ -36,11 +38,11 @@
 
 	<!-- Footer -->
 	@include('page.footer')
-<!-- Link back to Colorlib can't be removed. /template is licensed under CC BY 3.0. -->
+	<!-- Link back to Colorlib can't be removed. /template is licensed under CC BY 3.0. -->
 
-				</p>
-			</div>
-		</div>
+	</p>
+	</div>
+	</div>
 	</footer>
 
 
@@ -53,7 +55,8 @@
 
 	<!-- Modal1 -->
 
-@include('page.foot')
+	@include('page.foot')
 
 </body>
+
 </html>
